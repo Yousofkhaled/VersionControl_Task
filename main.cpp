@@ -12,12 +12,22 @@ int getSum (vector<int> &v) {
     return sum;
 }
 
+int getMin (vector<int> &v) {
+    
+    int mn = v[0];
+    for (auto num : v) {
+        mn = min (mn, num);
+    }
+    
+    return mn;
+
 float getAverage (vector<int>& v) {
     float sum = 0;
     for (auto num : v) {
         sum += num;
     }
     return sum / (float)v.size();
+
 }
 
 int main () {
@@ -27,7 +37,11 @@ int main () {
 
     cout << "sum = " << getSum (v) << "\n";
     
+
+    cout << "min = " << getMin (v) << "\n";
+
     cout << "average = " << getAverage (v) << "\n";
+
 
     return 0;
 }

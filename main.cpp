@@ -20,6 +20,7 @@ int getMin (vector<int> &v) {
     }
     
     return mn;
+}
 
 float getAverage (vector<int>& v) {
     float sum = 0;
